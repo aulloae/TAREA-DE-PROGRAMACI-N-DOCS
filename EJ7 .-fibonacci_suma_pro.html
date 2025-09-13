@@ -1,0 +1,49 @@
+<script>
+
+
+let a=1, b=0, fibo=0, r=0, cp=0, cm=2;
+
+
+for (i=0; i<10; i++){
+fibo = a+b;
+document.write (fibo + "<br>");
+a=b;
+b=fibo;
+}
+while (cm <= 10 && r == 0){
+r=10%cm;
+cm++;
+if (r!=0) {
+document.write( "La cantidad de numeros primos es de: " + cm + "<br>");}
+}
+
+document.write("Los numeros primos son: " + "<br>" )
+
+let n = 2;
+let cn = 0;
+
+while (n <= 5){
+    if(esPrimo(n)){ 
+        cn = cn + n;
+        document.write( n + ", ");
+    }
+    n++;
+}
+  document.write(13 + "<br>");
+function esPrimo(n) {
+  
+      let contador=2;
+    while(contador<n){
+    if(n % contador==0) {  
+                return false;
+    }  contador++;  
+        }
+  
+        return true;
+    }
+document.write("La suma de los numeros primos es: " + (cn+13) + "<br>");
+let prom=0
+prom = (cn+13)/cm; 
+document.write("El promedio de los numeros primos es: " + prom);
+
+</script>

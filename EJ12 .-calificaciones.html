@@ -1,0 +1,23 @@
+<script>
+const nota = parseFloat(prompt("Ingresa una nota (del 1 al 20):"));
+function convertirCalificacion(nota) {
+  if (nota >= 1 && nota <= 20) {
+    if (nota >= 19) {
+      return "SOBRESALIENTE ";
+    } else if (nota >= 16) {
+      return "MUY BUENO ";
+    } else if (nota >= 13) {
+      return "BUENO ";
+    } else if (nota >= 10) {
+      return "REGULAR ";
+    } else {
+      return "DEFICIENTE ";
+    }
+  } else {
+    return "Error: La nota debe estar entre 1 y 20.";
+   
+  }
+}
+document.write("La calificación " + nota + " es: " + convertirCalificacion(nota))
+
+</script>

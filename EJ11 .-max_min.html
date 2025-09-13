@@ -1,0 +1,19 @@
+<script>
+
+let max = null;
+let min = null;
+let n = null;
+n = prompt("Ingrese un número (o 's' para salir):");
+if (n != null && n != "") {
+    max = min = parseFloat(n);
+    n = prompt("Ingrese un número (o 's' para salir):");
+    while (n != null && n != 's') {
+        let num = parseFloat(n);
+        if (num > max) max = num;
+        if (num < min) min = num;
+        n = prompt("Ingrese un número (o 's' para salir):");
+    }
+    document.write("Máximo: " + max + "<br>" + "Mínimo: " + min);
+}
+
+</script>

@@ -1,0 +1,21 @@
+<script>
+
+let n=0, c=2, r=1;
+
+n=prompt("Ingrese un número:");
+
+while (c < n && r != 0){
+r=n%c;
+c++;
+}
+
+if (r==0) {
+    document.write("EL NUMERO " + n + " NO ES PRIMO");
+} 
+else {
+ document.write ("EL NUMERO " + n + " ES PRIMO");
+}    
+
+
+
+</script>

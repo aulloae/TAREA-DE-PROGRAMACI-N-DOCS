@@ -1,0 +1,18 @@
+<script>
+    let ventasf=0;
+    let sueldof=0;
+    let comision=0;
+let nombre = prompt("Ingrese su nombre:");
+let sueldo=parseFloat(prompt("Ingrese su sueldo:"));
+
+for (i=1; i<=3; i++){
+ventas=prompt("Ingrese el monto de la venta " + i + ":");
+ventasf=ventasf+parseFloat(ventas);
+}
+
+comision=ventasf*0.10;
+document.write("El vendedor " + nombre + " con un sueldo de " + sueldo + " y un total de ventas de " + ventasf + " tiene una comision de " + comision + "<br>");
+sueldof=sueldo+comision;
+document.write("El sueldo total del vendedor " + nombre + " es de: " + sueldof );
+
+</script>

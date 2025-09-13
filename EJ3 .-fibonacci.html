@@ -1,0 +1,16 @@
+<script>
+
+let a=1, b=0, fibo=0;
+let n= parseInt(prompt("Ingrese la cantidad de numeros Fibonacci que desea ver:"));
+document.write("Los " +n+ " numeros fibonnaci" + "<br>");
+
+for (i=1; i<=n; i++){
+fibo = a+b;
+document.write (fibo + "<br>");
+a=b;
+b=fibo;
+}
+
+
+
+</script>

@@ -1,0 +1,48 @@
+<script>
+let p=0
+let n=2;
+
+p=prompt("Ingrese un número para saber si es primo:");
+
+const perfecto =esPerfecto(p)
+   if(perfecto==true){
+   document.write("EL NUMERO "+p+" ES PERFECTO <br> <br>");
+   } 
+   else{
+    document.write("EL NUMERO "+p+" NO ES PERFECTO <br> <br>");
+   }
+
+   document.write("LOS PRIMEROS 4 NUMEROS PERFECTOS SON: <br>");
+while(n<=7){
+if(esPrimo(n)){
+  const num_perfecto = (2**(n-1))*((2**n)-1);
+document.write(num_perfecto);
+document.write("<br>");
+}
+n++;
+}
+function esPrimo(n) {
+    let contador = 2;
+    while(contador<n
+    ){
+    if(n% contador ==0) { 
+        return false; 
+    } 
+    contador++;
+}  
+        return true; 
+}
+
+function esPerfecto(p){
+    let s=0;
+for (let i=0; i<p; i++){
+if(p%i==0){
+    s=s+i;}
+}
+if (p==s){
+    return true;
+}
+return false;
+}
+
+</script>

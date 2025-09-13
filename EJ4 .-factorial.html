@@ -1,0 +1,19 @@
+<script>
+
+num=prompt("Ingrese un número para conocer su factorial:");
+cn=1;
+cm=1;
+document.write(num + "! ES : " + "<br>" + "<br>");
+for (i=1; i <= num; i++) {
+    cm=cm*i;
+    cn=i;
+     document.write( cn ) ;
+   if (i<num){
+    document.write( " *" );
+    }
+    }
+document.write("= " +  cm);
+
+
+
+</script>
